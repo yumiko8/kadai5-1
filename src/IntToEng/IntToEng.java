@@ -1,3 +1,4 @@
+package IntToEng;
 import java.util.Scanner;
 
 public class IntToEng {
@@ -11,7 +12,7 @@ public class IntToEng {
 	    }
 
 	    // 数値を英訳する変換するメソッド
-	    static String translateEng(int n) {
+	    public static String translateEng(int n) {
 	    	if(n==1) return"one";
 	    	else if(n==2) return "twe";
 	    	else if(n==3) return "three";
