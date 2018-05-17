@@ -27,10 +27,14 @@ public class IntToEng {
 	    	else if(n==13) return "thirteen";
 	    	else if(n==15) return "fifteen";
 	    	else if(n<=19) return translateEng(n-10)+"teen";
-	    	else if(n==14) return "";
-	    	else if(n==15) return "";
-	    	else if(n==16) return "";
-	    	else if(n==17) return "";
+	    	else if(n<30) return "twenty "+translateEng(n-20);
+	    	else if(n<40) return "thirty "+translateEng(n-30);
+	    	else if(n<50) return "forty "+translateEng(n-40);
+	    	else if(n<60) return "fifty "+translateEng(n-50);
+	    	else if(n<70) return "sixty "+translateEng(n-60);
+	    	else if(n<80) return "seventy "+translateEng(n-70);
+	    	else if(n<90) return "eighty "+translateEng(n-80);
+	    	else if(n<100) return "ninety "+translateEng(n-90);
 	    	return "";
 	    }
 
