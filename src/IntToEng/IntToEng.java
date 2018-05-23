@@ -14,7 +14,7 @@ public class IntToEng {
 	    // 数値を英訳する変換するメソッド
 	    public static String translateEng(int n) {
 	    	if(n==1) return"one";
-	    	else if(n==2) return "twe";
+	    	else if(n==2) return "two";
 	    	else if(n==3) return "three";
 	    	else if(n==4) return "four";
 	    	else if(n==5) return "five";
@@ -36,6 +36,8 @@ public class IntToEng {
 	    	else if(n<80) return "seventy "+translateEng(n-70);
 	    	else if(n<90) return "eighty "+translateEng(n-80);
 	    	else if(n<100) return "ninety "+translateEng(n-90);
+	    	else if(n<1000) return translateEng(n/100)+" hundred "+translateEng(n%100);
+	   
 	    	return "";
 	    }
 
